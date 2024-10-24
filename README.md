@@ -1,97 +1,79 @@
-# Economic Assessment of Carsharing Fleet Maintenance Efficiency
+# Ekonomiczna Ocena Efektywności Utrzymania Floty Carsharingowej
 
 Projekt ten wykorzystuje symulacje w Pythonie do generowania zestawów danych dotyczących różnych predefiniowanych strategii konserwacji pojazdów serwisowych. W trakcie symulacji dokładnie monitorowany jest czas użytkowania pojazdów, zarówno podczas ich eksploatacji, jak i w okresach konserwacji, a także rejestrowane są koszty związane z serwisowaniem, przeglądami oraz wymianą pojazdów. Wygenerowane zbiory danych, obejmujące symulacje o różnych okresach trwania, są zapisywane w formacie CSV. Następnie dane te są analizowane i wizualizowane przy użyciu bibliotek takich jak matplotlib i pandas, co umożliwia szczegółową ocenę efektywności strategii konserwacyjnych.
 
 ---
 
-## Features
+## Funkcje
 
-- **Customizable Maintenance Strategies:**
-  - Simulate different maintenance approaches (reactive, preventive, or mixed strategies).
-  - Evaluate the impact of maintenance strategies on overall fleet performance.
+- **Dostosowywalne Strategie Konserwacji:**
+  - Symulacja różnych podejść do konserwacji (reaktywna, prewencyjna lub mieszana).
+  - Ocena wpływu strategii konserwacyjnych na ogólną wydajność floty.
   
-- **Data Tracking & Recording:**
-  - Tracks vehicle usage, maintenance periods, repair costs, and replacement expenses.
-  - Records operational downtime and service availability metrics.
+- **Śledzenie i Rejestrowanie Danych:**
+  - Śledzi czas użytkowania pojazdów, okresy konserwacji, koszty napraw oraz wymianę pojazdów.
+  - Rejestruje czas przestoju operacyjnego i wskaźniki dostępności usług.
   
-- **Performance Metrics:**
-  - Calculates availability of the fleet.
-  - Assesses economic efficiency and reliability of components over time.
+- **Metryki Wydajności:**
+  - Oblicza dostępność floty.
+  - Ocenia efektywność ekonomiczną i niezawodność komponentów w czasie.
 
-- **Simulation Analysis:**
-  - Generates CSV files with detailed data from each simulation.
-  - Provides a detailed breakdown of cost structures and fleet efficiency.
+- **Analiza Symulacji:**
+  - Generuje pliki CSV z szczegółowymi danymi z każdej symulacji.
+  - Zapewnia szczegółowy podział kosztów i efektywności floty.
 
 ---
 
-## Setup and Installation
+## Instalacja i Konfiguracja
 
-1. Clone the repository:
+1. Sklonuj repozytorium:
     ```bash
-    git clone https://github.com/your-repo-url/CarsharingFleetSimulator.git
+     git clone https://github.com/alexrdnk/CarEfficiencySimulator.git
     ```
 
-2. Install the required Python libraries:
+2. Zainstaluj wymagane biblioteki Pythona:
     ```bash
     pip install -r requirements.txt
     ```
 
-3. Launch the simulation script:
+3. Uruchom skrypt symulacyjny:
     ```bash
-    python run_simulation.py
+   NONE
     ```
 
 ---
 
-## Usage
+## Użytkowanie
 
-### 1. Configure Simulation
-In the `config.py` file, set your simulation parameters:
-- **Strategy Selection:** Choose between reactive, preventive, or mixed maintenance strategies.
-- **Vehicle Parameters:** Set vehicle usage times, maintenance intervals, and component aging models.
+### 1. Konfiguracja Symulacji
+- **Wybór Strategii:** Wybierz między konserwacją reaktywną, prewencyjną lub mieszaną.
+- **Parametry Pojazdu:** Ustaw czas użytkowania pojazdu, interwały konserwacji oraz modele starzenia komponentów.
 
-### 2. Run Simulation
-Once configured, run the simulation. This will generate a CSV file with performance metrics and cost breakdowns for the chosen maintenance strategy.
+### 2. Uruchom Symulację
+Po konfiguracji, uruchom symulację. Wygenerowany zostanie plik CSV z metrykami wydajności i podziałem kosztów dla wybranej strategii konserwacji.
 
-### 3. Analyze Results
-Use the generated CSV files to analyze the effectiveness of each strategy. The analysis can be done using libraries like **pandas** for data manipulation and **matplotlib** for visualization.
-
----
-
-## Data Handling
-
-- **Input Data:**
-  - Defined by user configurations, including vehicle usage time, repair time, and maintenance intervals.
-  
-- **Generated Data:**
-  - CSV files that include vehicle operation periods, maintenance costs, and fleet availability metrics.
-  
-- **Visualization:**
-  - Use the included scripts to generate visual charts from simulation data, showcasing the economic impact of different maintenance strategies.
+### 3. Analizuj Wyniki
+Użyj wygenerowanych plików CSV do analizy skuteczności każdej strategii. Analizę można przeprowadzić za pomocą bibliotek takich jak **pandas** do manipulacji danymi oraz **matplotlib** do wizualizacji.
 
 ---
 
-## Example
+## Obsługa Danych
 
-Here is an example of how to visualize data from the simulation:
+- **Dane wejściowe:**
+  - Zdefiniowane przez konfiguracje użytkownika, w tym czas użytkowania pojazdu, czas naprawy oraz interwały konserwacji.
+  
+- **Generowane dane:**
+  - Pliki CSV zawierające okresy działania pojazdu, koszty konserwacji oraz wskaźniki dostępności floty.
+  
+- **Wizualizacja:**
+  - Skorzystaj z dołączonych skryptów do generowania wykresów z danych symulacyjnych, pokazujących ekonomiczny wpływ różnych strategii konserwacyjnych.
 
-```python
-import pandas as pd
-import matplotlib.pyplot as plt
+---
 
-# Load the simulation data
-df = pd.read_csv('simulation_output.csv')
+## Autorzy
 
-# Plot the total maintenance cost over time
-plt.plot(df['time'], df['maintenance_cost'])
-plt.title('Maintenance Cost Over Time')
-plt.xlabel('Time')
-plt.ylabel('Cost')
-plt.show()
-
-```
-## Authors
 - **Oleksandr Radionenko**
 - **Bohdan Stepanenko**
 - **Mykhailo Dek**
+
 
