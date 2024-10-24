@@ -1,6 +1,6 @@
 # Ekonomiczna Ocena Efektywności Utrzymania Floty Carsharingowej
 
-Projekt ten wykorzystuje symulacje w Pythonie do generowania zestawów danych dotyczących różnych predefiniowanych strategii konserwacji pojazdów serwisowych. W trakcie symulacji dokładnie monitorowany jest czas użytkowania pojazdów, zarówno podczas ich eksploatacji, jak i w okresach konserwacji, a także rejestrowane są koszty związane z serwisowaniem, przeglądami oraz wymianą pojazdów. Wygenerowane zbiory danych, obejmujące symulacje o różnych okresach trwania, są zapisywane w formacie CSV. Następnie dane te są analizowane i wizualizowane przy użyciu bibliotek takich jak matplotlib i pandas, co umożliwia szczegółową ocenę efektywności strategii konserwacyjnych.
+Projekt ten wykorzystuje symulacje w Pythonie do generowania zestawów danych dotyczących różnych predefiniowanych strategii konserwacji pojazdów floty. Wygenerowane zbiory danych, obejmujące symulacje o różnych okresach trwania, są zapisywane w formacie CSV. Następnie dane te są analizowane i wizualizowane przy użyciu bibliotek takich jak matplotlib i pandas, co umożliwia szczegółową ocenę efektywności strategii konserwacyjnych.
 
 ---
 
