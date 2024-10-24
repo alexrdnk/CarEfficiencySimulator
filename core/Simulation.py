@@ -1,1 +1,0 @@
-print("Ekonomiczna ocena efektywności utrzymania floty carsharingowej")
