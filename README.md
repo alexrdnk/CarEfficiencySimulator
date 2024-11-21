@@ -2,7 +2,7 @@
 
 ## Railway System Maintenance Simulator
 
-Projekt ten służy do symulacji różnych strategii konserwacji systemu kolejowego, w celu oceny ich wpływu na dostępność, koszty i czas przestojów. Symulacje bazują na modelu Weibulla dla przewidywania czasów awarii, a wyniki zawierają metryki takie jak średni czas do awarii (MTBF), średni czas naprawy (MTTR), oraz koszty utrzymania.
+Ten kod projektu to platforma symulacyjna do analizy niezawodności i opłacalności różnych polityk utrzymania ruchu w systemie kolejowym. Oblicza kluczowe wskaźniki, takie jak dostępność, przestoje, koszty utrzymania i miary niezawodności (MTBF, MTTR), symulując proces awarii i napraw przy użyciu rozkładu Weibulla. Po uruchomieniu symulacji, kod zapisuje wyniki do pliku CSV i generuje wizualne porównania między politykami.
 
 ## Funkcje
 
