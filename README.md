@@ -20,25 +20,6 @@ Ten kod projektu to platforma symulacyjna do analizy niezawodności i opłacalno
 
 ---
 
-## Instalacja i Konfiguracja
-
-1. Sklonuj repozytorium:
-    ```bash
-    git clone https://github.com/alexrdnk/CarEfficiencySimulator.git
-    ```
-
-2. Zainstaluj wymagane biblioteki Pythona:
-    ```bash
-    pip install -r requirements.txt
-    ```
-
-3. Uruchom skrypt symulacyjny:
-    ```bash
-    python main.py
-    ```
-
----
-
 ## Użytkowanie
 
 Po uruchomieniu programu, symulator przeprowadzi serię symulacji na podstawie zdefiniowanych strategii konserwacji. Wyniki zostaną zapisane do pliku CSV, a także wygenerowane wykresy, które pozwolą na wizualną analizę wyników. 
