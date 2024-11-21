@@ -1,26 +1,22 @@
-# Ekonomiczna Ocena Efektywności Utrzymania Floty Carsharingowej
+# Temat projektu
 
-Projekt ten wykorzystuje symulacje w Pythonie do generowania zestawów danych dotyczących różnych predefiniowanych strategii konserwacji pojazdów floty. Wygenerowane zbiory danych, obejmujące symulacje o różnych okresach trwania, są zapisywane w formacie CSV. Następnie dane te są analizowane i wizualizowane przy użyciu bibliotek takich jak matplotlib i pandas, co umożliwia szczegółową ocenę efektywności strategii konserwacyjnych.
+## Railway System Maintenance Simulator
 
----
+Projekt ten służy do symulacji różnych strategii konserwacji systemu kolejowego, w celu oceny ich wpływu na dostępność, koszty i czas przestojów. Symulacje bazują na modelu Weibulla dla przewidywania czasów awarii, a wyniki zawierają metryki takie jak średni czas do awarii (MTBF), średni czas naprawy (MTTR), oraz koszty utrzymania.
 
 ## Funkcje
 
 - **Dostosowywalne Strategie Konserwacji:**
-  - Symulacja różnych podejść do konserwacji (reaktywna, prewencyjna lub mieszana).
-  - Ocena wpływu strategii konserwacyjnych na ogólną wydajność floty.
+  Symulator obsługuje różne strategie konserwacji, takie jak konserwacja prewencyjna, reaktywna i predykcyjna, które można łatwo konfigurować i testować.
   
 - **Śledzenie i Rejestrowanie Danych:**
-  - Śledzi czas użytkowania pojazdów, okresy konserwacji, koszty napraw oraz wymianę pojazdów.
-  - Rejestruje czas przestoju operacyjnego i wskaźniki dostępności usług.
-  
+  Podczas symulacji zbierane są szczegółowe dane dotyczące awarii, kosztów utrzymania, czasów przestojów i innych metryk, które mogą być zapisane do pliku CSV.
+
 - **Metryki Wydajności:**
-  - Oblicza dostępność floty.
-  - Ocenia efektywność ekonomiczną i niezawodność komponentów w czasie.
+  Po każdej symulacji generowane są metryki takie jak MTBF, MTTR, dostępność systemu oraz koszty konserwacji, które są analizowane i przedstawiane w formie wykresów.
 
 - **Analiza Symulacji:**
-  - Generuje pliki CSV z szczegółowymi danymi z każdej symulacji.
-  - Zapewnia szczegółowy podział kosztów i efektywności floty.
+  Symulator umożliwia uruchamianie wielu symulacji, agregowanie wyników oraz wizualizację danych w postaci wykresów porównujących efektywność różnych polityk konserwacji.
 
 ---
 
@@ -28,7 +24,7 @@ Projekt ten wykorzystuje symulacje w Pythonie do generowania zestawów danych do
 
 1. Sklonuj repozytorium:
     ```bash
-     git clone https://github.com/alexrdnk/CarEfficiencySimulator.git
+    git clone https://github.com/alexrdnk/CarEfficiencySimulator.git
     ```
 
 2. Zainstaluj wymagane biblioteki Pythona:
@@ -38,35 +34,32 @@ Projekt ten wykorzystuje symulacje w Pythonie do generowania zestawów danych do
 
 3. Uruchom skrypt symulacyjny:
     ```bash
-   NONE
+    python main.py
     ```
 
 ---
 
 ## Użytkowanie
 
-### 1. Konfiguracja Symulacji
-- **Wybór Strategii:** Wybierz między konserwacją reaktywną, prewencyjną lub mieszaną.
-- **Parametry Pojazdu:** Ustaw czas użytkowania pojazdu, interwały konserwacji oraz modele starzenia komponentów.
+Po uruchomieniu programu, symulator przeprowadzi serię symulacji na podstawie zdefiniowanych strategii konserwacji. Wyniki zostaną zapisane do pliku CSV, a także wygenerowane wykresy, które pozwolą na wizualną analizę wyników. 
 
-### 2. Uruchom Symulację
-Po konfiguracji, uruchom symulację. Wygenerowany zostanie plik CSV z metrykami wydajności i podziałem kosztów dla wybranej strategii konserwacji.
-
-### 3. Analizuj Wyniki
-Użyj wygenerowanych plików CSV do analizy skuteczności każdej strategii. Analizę można przeprowadzić za pomocą bibliotek takich jak **pandas** do manipulacji danymi oraz **matplotlib** do wizualizacji.
+Plik konfiguracyjny `maintenance_policies.json` zawiera wszystkie ustawienia dotyczące polityk konserwacji, czasów awarii, kosztów napraw oraz innych parametrów, które można łatwo dostosować.
 
 ---
 
 ## Obsługa Danych
 
 - **Dane wejściowe:**
-  - Zdefiniowane przez konfiguracje użytkownika, w tym czas użytkowania pojazdu, czas naprawy oraz interwały konserwacji.
-  
+  - Plik konfiguracyjny JSON zawierający definicje polityk konserwacji, czasów użytkowania, kosztów, oraz innych parametrów.
+  - Wartości wejściowe do symulacji, takie jak czas symulacji, liczba symulacji, oraz cele SLA.
+
 - **Generowane dane:**
-  - Pliki CSV zawierające okresy działania pojazdu, koszty konserwacji oraz wskaźniki dostępności floty.
-  
+  - Symulator generuje dane dotyczące awarii, kosztów konserwacji, oraz czasów przestojów.
+  - Wyniki symulacji zawierają metryki, takie jak średni czas do awarii (MTBF), średni czas naprawy (MTTR), średni czas przestoju, oraz dostępność systemu.
+
 - **Wizualizacja:**
-  - Skorzystaj z dołączonych skryptów do generowania wykresów z danych symulacyjnych, pokazujących ekonomiczny wpływ różnych strategii konserwacyjnych.
+  - Generowane są wykresy porównujące różne polityki konserwacji pod względem dostępności, kosztów konserwacji, czasu przestoju, oraz liczby wymian komponentów.
+  - Wykresy są zapisywane w pliku `maintenance_policy_comparison.png`.
 
 ---
 
@@ -75,5 +68,6 @@ Użyj wygenerowanych plików CSV do analizy skuteczności każdej strategii. Ana
 - **Oleksandr Radionenko**
 - **Bohdan Stepanenko**
 - **Mykhailo Dek**
+
 
 
