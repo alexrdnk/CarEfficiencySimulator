@@ -1,13 +1,8 @@
 # Railway System Maintenance Simulator
 
-[![Python Version](https://img.shields.io/badge/python-3.6%2B-blue.svg)](https://www.python.org/downloads/)
-[![License](https://img.shields.io/badge/license-MIT-green.svg)](LICENSE)
-
-A sophisticated simulation tool for evaluating and comparing different railway system maintenance policies using statistical modeling and reliability engineering principles.
-
 ## 🚂 Overview
 
-The Railway System Maintenance Simulator is a powerful tool designed to help railway operators and maintenance engineers optimize their maintenance strategies. It simulates different maintenance policies (Preventive, Reactive, and Predictive) and evaluates their impact on system reliability, costs, and performance metrics.
+This project code is a simulation framework for analyzing the reliability and cost-effectiveness of different maintenance policies in a railway system. It calculates key metrics such as availability, downtime, maintenance costs, and reliability measures (MTBF, MTTR) by simulating the failure and repair process using a Weibull distribution. After running the simulations, the code saves the results to CSV and generates visual comparisons between policies.
 
 ## ✨ Features
 
@@ -112,17 +107,13 @@ Based on the simulation results:
 3. Considers component-level and system-level failures
 4. Accounts for maintenance costs and repair times
 
-## 🤝 Contributing
-
-Contributions are welcome! Please feel free to submit a Pull Request.
-
 ## 📝 License
 
-This project is licensed under the MIT License - see the LICENSE file for details.
+## 🤝 Developers
 
-## 📧 Contact
-
-For questions and feedback, please open an issue in the repository.
+- **Oleksandr Radionenko**
+- **Bohdan Stepanenko**
+- **Mykhailo Dek**
 
 
 
